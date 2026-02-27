@@ -1,23 +1,21 @@
-# Katherin Ibarra – Web Design Portfolio
+# Katherin Ibarra – Web Design & Remote Work Portfolio
 
-This repository contains my personal web design portfolio.  
-I’m a bilingual (Spanish/English) professional with a background in web design, e‑marketing, customer service, and transcription.
+This repository contains my entry-level portfolio.  
+I’m a bilingual (English/Spanish) professional with a background in web design, e‑marketing, customer service, and transcription.
+
+## Live site
+
+- Main portfolio: https://kibarranov.github.io/kth-portfolio/
+- VA landing page sample: https://kibarranov.github.io/kth-portfolio/landing.html
 
 ## What’s included
 
-- `index.html` – Main portfolio page (About, Skills, Education, Projects).
-- `styles.css` – Basic styles for layout and typography.  
+- `index.html` – Main portfolio (About, Skills, Education, Projects, Contact).
+- `landing.html` – Sample landing page for remote Virtual Assistant services.
+- `style.css` – Shared styles (layout, typography, buttons, cards).
 
 ## Focus
 
-- Web design (HTML/CSS)
-- E‑marketing concepts (basic presentation of content and services)
-- Remote work support: data entry, transcription, virtual assistance
-
-## Status
-
-This portfolio is **in progress**. I will be adding:
-
-- A small business landing page
-- A simple task tracker UI
-- Transcription and data entry samples
+- Web design (HTML/CSS, responsive layout)
+- Remote work support: data entry, virtual assistance, transcription
+- Bilingual communication (EN/ES)
