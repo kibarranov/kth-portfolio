@@ -3,88 +3,128 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>KI – Web Design Portfolio</title>
+  <title>Katherin Ibarra – Web Design & VA Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header class="site-header">
+    <a class="skip-link" href="#main">Skip to content</a>
 
-  <header>
-    <h1>Katherin Ibarra</h1>
-    <p class="subtitle">Bilingual Web Design & E‑Marketing – Entry-Level Portfolio</p>
+    <div class="header-bar">
+      <div class="header-name">
+        <h1>Katherin Ibarra</h1>
+        <p class="subtitle">Bilingual Web Design & Virtual Assistance (EN / ES)</p>
+      </div>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
 
-    <nav>
-      <a href="#about">About</a> |
-      <a href="#skills">Skills</a> |
-      <a href="#education">Education</a> |
-      <a href="#projects">Projects</a> |
-      <a href="#contact">Contact</a> |
-
-    </nav>
+    <section class="hero-simple">
+      <div class="hero-simple-text">
+        <p class="hero-tag">Web design · Virtual assistant · EN / ES</p>
+        <h2>Web pages and remote support that stay simple and clear.</h2>
+        <p>
+          I create small, readable websites with HTML/CSS and support teams with data entry,
+          transcription, and inbox organization. I work in English and Spanish and like turning
+          messy information into clear, usable content.
+        </p>
+        <div class="hero-simple-actions">
+          <a class="btn" href="#projects">View projects</a>
+          <button class="ghost-btn" type="button"
+            onclick="document.querySelector('#contact').scrollIntoView({behavior:'smooth'})">
+            Contact
+          </button>
+        </div>
+      </div>
+      <div class="hero-simple-photo">
+        <img src="img/kth.jpeg" alt="Photo of Katherin Ibarra">
+      </div>
+    </section>
   </header>
 
-  <div class="section" id="about">
-    <h2>About Me</h2>
-    <div class="about-wrapper">
-      <img src="img/kth.jpeg" alt="Photo of Katherin Ibarra" class="profile-photo">
+  <main id="main">
+    <section class="section" id="about">
+      <h2>About Me</h2>
+      <div class="about-wrapper">
+        <p>
+          I’m a bilingual (Spanish/English) professional with a background in web design, e‑marketing, and customer service.
+          I have experience in retail supervision, remote support, and transcription projects, and I’m building a portfolio
+          focused on web design, data entry, and virtual assistance. I’m also learning JavaScript to add simple interactivity
+          to my designs.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>Web design: HTML/CSS, layout, basic responsive design</li>
+        <li>E‑marketing concepts: basic SEO, online promotion, content presentation</li>
+        <li>Data entry &amp; transcription (high attention to detail)</li>
+        <li>Google Workspace &amp; Microsoft Office</li>
+        <li>Remote work: async communication, time management, independent work</li>
+        <li>Customer service &amp; retail experience</li>
+      </ul>
+    </section>
+
+    <section class="section" id="education">
+      <h2>Education &amp; Certifications</h2>
+      <ul class="skills-list">
+        <li>A.S., Web Design – Palomar College</li>
+        <li>Certificates of Achievement: Web Design, Front-End Web, E‑Marketing</li>
+        <li>Typing certification – in progress</li>
+        <li>JavaScript coursework – in progress (to complement web design skills)</li>
+      </ul>
+    </section>
+
+    <section class="section" id="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3><a href="index.html">Personal portfolio page</a></h3>
+          <p>Single-page portfolio built with HTML/CSS, focused on clear layout and readability.</p>
+          <p class="project-meta">Role: Web design · Status: Live</p>
+        </article>
+
+        <article class="project-card">
+          <h3><a href="landing.html">Virtual Assistant landing page</a></h3>
+          <p>One‑page site for VA services, highlighting data entry, inbox support, and bilingual transcription.</p>
+          <p class="project-meta">Role: Web design & copy · Status: Live</p>
+        </article>
+
+        <article class="project-card">
+          <h3>Remote task tracker UI</h3>
+          <p>Planned interface to organize daily tasks for remote work using HTML/CSS and basic JavaScript.</p>
+          <p class="project-meta">Role: UI concept · Status: In progress</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>Contact</h2>
       <p>
-        I’m a bilingual (Spanish/English) professional with a background in web design, e‑marketing, and customer service.
-        I have experience in retail supervision, remote support, and transcription projects, and I’m currently building
-        a small portfolio focused on web design, data entry, and virtual assistance. I’m also learning JavaScript to
-        add simple interactivity to my designs.
+        Email:
+        <a href="mailto:kibarranov@gmail.com">kibarranov@gmail.com</a><br>
+        LinkedIn:
+        <a href="https://www.linkedin.com/in/kibarra17" target="_blank" rel="noopener noreferrer">
+          linkedin.com/in/kibarra17
+        </a>
       </p>
-    </div>
-  </div>
+    </section>
+  </main>
 
-  <div class="section" id="skills">
-    <h2>Skills</h2>
-    <p>
-      Web design: HTML/CSS, layout, basic responsive design<br>
-      E‑marketing concepts: basic SEO, online promotion, content presentation<br>
-      Data entry & transcription (high attention to detail)<br>
-      Google Workspace & Microsoft Office<br>
-      Remote work: asynchronous communication, time management, independent work<br>
-      Customer service & retail experience
-    </p>
-  </div>
-
-  <div class="section" id="education">
-    <h2>Education & Certifications</h2>
-    <p>
-      A.S., Web Design – Palomar College<br>
-      Certificates of Achievement: Web Design, Front-End Web, E‑Marketing<br>
-      Typing certification – in progress<br>
-      JavaScript coursework – in progress (to complement web design skills)
-    </p>
-  </div>
-
-<div class="section" id="projects">
-  <h2>Projects (in progress)</h2>
-  <ul class="projects-list">
-    <li>
-      <span class="project-title">Personal portfolio page (this site)</span> – Simple HTML/CSS layout to present my profile, skills, and education.
-    </li>
-    <li>
-      <span class="project-title">Small business landing page</span> – Planned sample design focused on product presentation and basic e‑marketing structure.
-    </li>
-    <li>
-      <span class="project-title">Remote task tracker UI</span> – Planned interface for organizing daily tasks for remote and administrative work.
-    </li>
-  </ul>
-
-  <p>
-    <a class="btn" href="landing.html">View sample landing layout (coming soon)</a>
-  </p>
-
-</div>
-
-
-<div class="section" id="contact">
-  <h2>Contact</h2>
-  <p>
-    Email: <a href="mailto:kibarranov@gmail.com">kibarranov@gmail.com</a><br>
-    LinkedIn: <a href="https://www.linkedin.com/in/kibarra17" target="_blank">linkedin.com/in/kibarra17</a>
-  </p>
-</div>
-
+  <footer class="site-footer">
+    <p>© 2026 Katherin Ibarra – Web Design & Remote Support</p>
+  </footer>
 </body>
 </html>
