@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Remote Task Tracker UI – Katherin Ibarra</title>
+  <meta name="description" content="Simple UI to track remote tasks by status (To do, In progress, Done). Built with HTML, CSS, and basic JavaScript.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="header-bar">
+      <div class="header-name">
+        <h1>Remote Task Tracker UI</h1>
+        <p class="subtitle">Simple interface for organizing remote work tasks</p>
+      </div>
+      <nav aria-label="Secondary navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">← Back to portfolio</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <h2>Overview</h2>
+      <p>
+        This is a small front-end prototype of a remote task tracker. The goal is to quickly
+        see what is <strong>To do</strong>, <strong>In progress</strong>, and <strong>Done</strong>,
+        and to filter tasks by status without reloading the page.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Task list</h2>
+
+      <div class="task-controls">
+        <label for="status-filter">Filter by status:</label>
+        <select id="status-filter">
+          <option value="all">All</option>
+          <option value="todo">To do</option>
+          <option value="in-progress">In progress</option>
+          <option value="done">Done</option>
+        </select>
+      </div>
+
+      <div class="task-list" id="task-list">
+        <article class="task-card" data-status="todo">
+          <h3>Inbox triage – Monday</h3>
+          <p>Review unread emails, label by priority, and flag items that need replies.</p>
+          <p class="task-meta">
+            Status: <span class="task-status task-status-todo">To do</span> · Due: Today
+          </p>
+        </article>
+
+        <article class="task-card" data-status="in-progress">
+          <h3>Client spreadsheet cleanup</h3>
+          <p>Normalize names and dates, remove duplicates, and prepare a clean CSV export.</p>
+          <p class="task-meta">
+            Status: <span class="task-status task-status-in-progress">In progress</span> · Due: This week
+          </p>
+        </article>
+
+        <article class="task-card" data-status="done">
+          <h3>Meeting transcription (EN/ES)</h3>
+          <p>Transcribed 30-minute call, added timestamps and a short English summary.</p>
+          <p class="task-meta">
+            Status: <span class="task-status task-status-done">Done</span> · Due: Yesterday
+          </p>
+        </article>
+
+        <article class="task-card" data-status="todo">
+          <h3>Update VA services document</h3>
+          <p>Review service list, update pricing notes, and organize sections for clients.</p>
+          <p class="task-meta">
+            Status: <span class="task-status task-status-todo">To do</span> · Due: Tomorrow
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>What I focused on</h2>
+      <ul class="skills-list">
+        <li>Clear, readable layout for remote tasks.</li>
+        <li>Simple filter interaction with vanilla JavaScript.</li>
+        <li>Reusable card styles that match the rest of the portfolio.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Katherin Ibarra – Web Design & Remote Support</p>
+  </footer>
+
+  <script>
+    // Simple status filter for task cards
+    const select = document.getElementById('status-filter');
+    const tasks = document.querySelectorAll('.task-card');
+
+    select.addEventListener('change', () => {
+      const value = select.value;
+      tasks.forEach(task => {
+        const status = task.getAttribute('data-status');
+        if (value === 'all' || value === status) {
+          task.style.display = '';
+        } else {
+          task.style.display = 'none';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
