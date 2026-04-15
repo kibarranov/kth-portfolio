@@ -727,6 +727,91 @@ section#contact .btn {
   color: #9ca3af;
 }
 
+/* Task tracker UI */
+.task-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.8rem;
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+.task-controls select {
+  padding: 0.35rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.9);
+  background: #ffffff;
+  font-size: 0.9rem;
+  color: #111827;
+}
+
+.task-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 0.9rem;
+}
+
+.task-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 0.8rem 0.95rem;
+  box-shadow:
+    0 14px 32px rgba(15, 23, 42, 0.08),
+    0 0 0 1px rgba(226, 232, 240, 0.9);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  transition: transform 0.15s ease-out, box-shadow 0.15s ease-out, border-color 0.15s ease-out;
+}
+
+.task-card h3 {
+  margin: 0 0 0.3rem;
+  font-size: 0.98rem;
+  color: #111827;
+}
+
+.task-card p {
+  margin: 0 0 0.3rem;
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+.task-meta {
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.task-card:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 18px 40px rgba(15, 23, 42, 0.12),
+    0 0 0 1px rgba(148, 163, 184, 0.6);
+  border-color: rgba(148, 163, 184, 0.7);
+}
+
+/* Task status pills */
+.task-status {
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+  font-size: 0.76rem;
+  font-weight: 500;
+}
+
+.task-status-todo {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.task-status-in-progress {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.task-status-done {
+  background: #dcfce7;
+  color: #166534;
+}
+
+
 /* Responsive */
 @media (max-width: 880px) {
   body {
